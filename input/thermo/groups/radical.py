@@ -10541,8 +10541,8 @@ L1: Radical
                                     L10: Aromatic_pi_S_(CH3_Benzyl_Para)_1_3
                                         L11: Aromatic_pi_S_(CH3_EBenzyl_Para)_1_3
                             L8: Aromatic_pi_S_(CH3_CH3_Sub)_1_3
-                                L9:Aromatic_pi_S_(CH3_C2H5_Sub)_1_3
-                                    L10: Aromatic_pi_S_(s1_3_6_diene_1_4)_1_3
+                                L9: Aromatic_pi_S_(s1_3_6_diene_1_4)_1_3
+                                L9: Aromatic_pi_S_(CH3_C2H5_Sub)_1_3
                                     L10: Aromatic_pi_S_(s1_4_6_diene_1_4)_1_3
                                     L10: Aromatic_pi_S_(s1_5_6_diene_1_4)_1_3
                                     L10: Aromatic_pi_S_(s1_6_6_diene_1_4)_1_3
@@ -10565,8 +10565,8 @@ L1: Radical
                                     L10: Aromatic_pi_S_(CH3_Benzyl_Meta)_1_4
                                         L11: Aromatic_pi_S_(CH3_EBenzyl_Meta)_1_4
                             L8: Aromatic_pi_S_(CH3_CH3_Sub)_1_4
+                                L9: Aromatic_pi_S_(s1_3_6_diene_1_4)_1_4
                                 L9: Aromatic_pi_S_(CH3_C2H5_Sub)_1_4
-                                    L10: Aromatic_pi_S_(s1_3_6_diene_1_4)_1_4
                                     L10: Aromatic_pi_S_(s1_4_6_diene_1_4)_1_4
                                     L10: Aromatic_pi_S_(s1_5_6_diene_1_4)_1_4
                                     L10: Aromatic_pi_S_(s1_6_6_diene_1_4)_1_4

@@ -6499,3 +6499,43 @@ Converted to training reaction from rate rule: R7_SSSS_D;doublebond_intra_NdCt_p
 """,
 )
 
+entry(
+    index = 324,
+    label = "C12H17-15 <=> C12H17-16",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(A=(29023.5, 's^-1'), n=1.19861, Ea=(27.5998, 'kJ/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""Calculation performed by Lawrence Lai, March 2018, CBS-QB3 level of theory""",
+    longDesc = 
+u"""
+Training reaction from kinetics library: Lai_Hexylbenzene
+Original entry: rad4 <=> EthyltetralinRad
+Calculation for rad4 <=> EthyltetralinRad
+Level of Theory: CBS-QB3
+Number of Rotors included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/2018/intra_R_Add_Exocyclic
+""",
+)
+
+entry(
+    index = 325,
+    label = "C12H17-17 <=> C12H17-18",
+    degeneracy = 2.0,
+    kinetics = Arrhenius(
+        A = (1.4489e+10, 's^-1'),
+        n = 1.22276,
+        Ea = (57.6245, 'kJ/mol'),
+        T0 = (1, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Calculation performed by Lawrence Lai, March 2018, CBS-QB3 level of theory""",
+    longDesc = 
+u"""
+Training reaction from kinetics library: Lai_Hexylbenzene
+Original entry: rad3 <=> PropylindaneRad
+Calculation for rad3 <=> PropylindaneRad
+Level of Theory: CBS-QB3
+Number of Rotors included: 3
+Location of calculations Pharos/home/laitcl/Gaussian/2018/intra_R_Add_Exocyclic
+""",
+)
