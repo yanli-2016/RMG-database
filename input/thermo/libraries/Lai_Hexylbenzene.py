@@ -4458,18 +4458,18 @@ multiplicity 2
 4  C u0 p0 c0 {3,D} {5,S} {10,S}
 5  C u0 p0 c0 {4,S} {6,D} {15,S}
 6  C u0 p0 c0 {5,D} {7,S} {16,S}
-7  C u0 p0 c0 {6,S} {8,S} {17,S} {18,S}
-8  C u1 p0 c0 {7,S} {9,S} {10,S}
-9  H u0 p0 c0 {8,S}
-10 C u0 p0 c0 {4,S} {8,S} {11,D}
+7  C u1 p0 c0 {6,S} {8,S} {9,S}
+8  H u0 p0 c0 {7,S}
+9  C u0 p0 c0 {7,S} {10,S} {17,S} {18,S}
+10 C u0 p0 c0 {4,S} {9,S} {11,D}
 11 C u0 p0 c0 {1,S} {10,D} {19,S}
 12 H u0 p0 c0 {1,S}
 13 H u0 p0 c0 {2,S}
 14 H u0 p0 c0 {3,S}
 15 H u0 p0 c0 {5,S}
 16 H u0 p0 c0 {6,S}
-17 H u0 p0 c0 {7,S}
-18 H u0 p0 c0 {7,S}
+17 H u0 p0 c0 {9,S}
+18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {11,S}
 """,
     thermo = NASA(
@@ -4491,7 +4491,7 @@ multiplicity 2
         Cp0 = (33.2579, 'J/(mol*K)'),
         CpInf = (457.296, 'J/(mol*K)'),
     ),
-    shortDesc = u"""library value for C1=CC=C2C=CC[CH]C2=C1 calculated by Lawrence Lai""",
+    shortDesc = u"""library value for C1=CC=C2C=C[CH]CC2=C1 calculated by Lawrence Lai""",
     longDesc = 
 u"""
 Level of theory: CBS-QB3
