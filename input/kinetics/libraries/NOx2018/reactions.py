@@ -11077,7 +11077,7 @@ entry(
     index = 707,
     label = "N2H4 + H <=> NH3 + NH2",
     degeneracy = 1,
-    kinetics = Arrhenius(A=(230000, 'cm^3/(mol*s)'), n=1.42, Ea=(8202, 'cal/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(2.3e+8, 'cm^3/(mol*s)'), n=1.42, Ea=(8202, 'cal/mol'), T0=(1, 'K')),
 )
 
 entry(
