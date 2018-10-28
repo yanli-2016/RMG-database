@@ -4359,7 +4359,7 @@ entry(
     label = 'N2H3 + NH2 <=> H2NN(S) + NH3',
     degeneracy = 1,
     allow_pdep_route = True,
-    kinetics = Arrhenius(A=(1.03+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
+    kinetics = Arrhenius(A=(1.03e+12, 'cm^3/(mol*s)'), n=0, Ea=(0, 'kJ/mol'), T0=(1, 'K')),
     shortDesc = u"""estimated""",
     longDesc =
 u"""
