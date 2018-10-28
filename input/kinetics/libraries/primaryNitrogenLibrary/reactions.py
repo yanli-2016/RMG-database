@@ -4731,3 +4731,24 @@ rotors: B3LYP/6-311++G(3df,3pd)
 Fitted to 51 data points; dA = *|/ 1.35051, dn = +|- 0.0366059, dEa = +|- 0.365208 kJ/mol
 """,
 )
+
+entry(
+    index = 265,
+    label = "N2H3 <=> N2H2 + H",
+    degeneracy = 1,
+    kinetics = Lindemann(
+        arrheniusHigh = Arrhenius(A=(3.53e+10, 's^-1'), n=0.86, Ea=(95338, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2500, 'K')),
+        arrheniusLow = Arrhenius(A=(5.91e+37, 'cm^3/(mol*s)'), n=-5.62, Ea=(99969, 'cal/mol'), T0=(1, 'K'), Tmin=(300, 'K'), Tmax=(2500, 'K'))),
+    elementary_high_p = True,
+    shortDesc = u"""[Lin2014b]""",
+    longDesc =
+u"""
+Part of the "N2H4 + N2O4" subset
+p. 265
+Bath gas: Ar
+calculations done at the RCCSD(T)/6-311þG(3df,2p)//B3LYP/6-311G(d,p) level of theoty
+Only High Pressure Limit rate was taken low limit rate is also available from the same source
+""",
+)
+
+
