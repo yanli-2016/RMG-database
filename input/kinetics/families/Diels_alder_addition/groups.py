@@ -26,10 +26,10 @@ entry(
     label = "diene_out",
     group = 
 """
-1 *4 Cd u0 {2,S} {3,D}
-2 *5 Cd u0 {1,S} {4,D}
-3 *3 Cd u0 {1,D}
-4 *6 Cd u0 {2,D}
+1 *4 [Cd,Cb,Cbf] u0 {2,[S,B]} {3,[D,B]}
+2 *5 [Cd,Cb,Cbf] u0 {1,[S,B]} {4,[D,B]}
+3 *3 [Cd,Cb,Cbf] u0 {1,[D,B]}
+4 *6 [Cd,Cb,Cbf] u0 {2,[D,B]}
 """,
     kinetics = None,
 )
@@ -39,8 +39,8 @@ entry(
     label = "diene_in",
     group = 
 """
-1 *4 [Cd,S4d,S6d,N3d,N5dc] u0 {2,S}
-2 *5 [Cd,S4d,S6d,N3d,N5dc] u0 {1,S}
+1 *4 [Cd,Cb,Cbf] u0 {2,[S,B]}
+2 *5 [Cd,Cb,Cbf] u0 {1,[S,B]}
 """,
     kinetics = None,
 )
@@ -54,6 +54,34 @@ entry(
 
 entry(
     index = 3,
+    label = "diene_benzene_out",
+    group = 
+"""
+1 *3 C u0 p0 c0 {2,B} {6,B}
+2 *4 C u0 p0 c0 {1,B} {3,B}
+3 *5 C u0 p0 c0 {2,B} {4,B}
+4 *6 C u0 p0 c0 {3,B} {5,B}
+5    C u0 p0 c0 {4,B} {6,B}
+6    C u0 p0 c0 {1,B} {5,B}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 4,
+    label = "diene_pah_bay_out",
+    group = 
+"""
+1 *4 Cbf u0 {2,B} {3,B}
+2 *5 Cbf u0 {1,B} {4,B}
+3 *3 Cb  u0 {1,B}
+4 *6 Cb  u0 {2,B}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 5,
     label = "diene_5ring_out",
     group = 
 """
@@ -69,7 +97,7 @@ entry(
 )
 
 entry(
-    index = 4,
+    index = 6,
     label = "diene_5ring_H_H_out",
     group = 
 """
@@ -85,7 +113,7 @@ entry(
 )
 
 entry(
-    index = 5,
+    index = 7,
     label = "diene_5ring_H_Nd_out",
     group = 
 """
@@ -101,7 +129,7 @@ entry(
 )
 
 entry(
-    index = 6,
+    index = 8,
     label = "diene_5ring_Nd_Nd_out",
     group = 
 """
@@ -117,7 +145,7 @@ entry(
 )
 
 entry(
-    index = 7,
+    index = 9,
     label = "diene_unsub_unsub_out",
     group = 
 """
@@ -134,7 +162,7 @@ entry(
 )
 
 entry(
-    index = 8,
+    index = 10,
     label = "diene_unsub_monosub_out",
     group = 
 """
@@ -151,7 +179,7 @@ entry(
 )
 
 entry(
-    index = 9,
+    index = 11,
     label = "diene_unsub_monosubNd_out",
     group = 
 """
@@ -168,7 +196,7 @@ entry(
 )
 
 entry(
-    index = 10,
+    index = 12,
     label = "diene_unsub_monosubDe_out",
     group = 
 """
@@ -185,7 +213,7 @@ entry(
 )
 
 entry(
-    index = 11,
+    index = 13,
     label = "diene_unsub_disub_out",
     group = 
 """
@@ -202,7 +230,7 @@ entry(
 )
 
 entry(
-    index = 12,
+    index = 14,
     label = "diene_unsub_disubNd2_out",
     group = 
 """
@@ -219,7 +247,7 @@ entry(
 )
 
 entry(
-    index = 13,
+    index = 15,
     label = "diene_unsub_disubNdDe_out",
     group = 
 """
@@ -236,7 +264,7 @@ entry(
 )
 
 entry(
-    index = 14,
+    index = 16,
     label = "diene_unsub_disubDe2_out",
     group = 
 """
@@ -253,7 +281,7 @@ entry(
 )
 
 entry(
-    index = 15,
+    index = 17,
     label = "diene_monosub_monosub_out",
     group = 
 """
@@ -270,7 +298,7 @@ entry(
 )
 
 entry(
-    index = 16,
+    index = 18,
     label = "diene_monosubNd_monosubNd_out",
     group = 
 """
@@ -287,7 +315,7 @@ entry(
 )
 
 entry(
-    index = 17,
+    index = 19,
     label = "diene_monosubNd_monosubDe_out",
     group = 
 """
@@ -304,7 +332,7 @@ entry(
 )
 
 entry(
-    index = 18,
+    index = 20,
     label = "diene_monosubDe_monosubDe_out",
     group = 
 """
@@ -321,7 +349,7 @@ entry(
 )
 
 entry(
-    index = 19,
+    index = 21,
     label = "diene_monosub_disub_out",
     group = 
 """
@@ -338,7 +366,7 @@ entry(
 )
 
 entry(
-    index = 20,
+    index = 22,
     label = "diene_monosubNd_disubNd2_out",
     group = 
 """
@@ -355,7 +383,7 @@ entry(
 )
 
 entry(
-    index = 21,
+    index = 23,
     label = "diene_monosubNd_disubNdDe_out",
     group = 
 """
@@ -372,7 +400,7 @@ entry(
 )
 
 entry(
-    index = 22,
+    index = 24,
     label = "diene_monosubNd_disubDe2_out",
     group = 
 """
@@ -389,7 +417,7 @@ entry(
 )
 
 entry(
-    index = 23,
+    index = 25,
     label = "diene_monosubDe_disubNd2_out",
     group = 
 """
@@ -406,7 +434,7 @@ entry(
 )
 
 entry(
-    index = 24,
+    index = 26,
     label = "diene_monosubDe_disubNdDe_out",
     group = 
 """
@@ -423,7 +451,7 @@ entry(
 )
 
 entry(
-    index = 25,
+    index = 27,
     label = "diene_monosubDe_disubDe2_out",
     group = 
 """
@@ -440,7 +468,7 @@ entry(
 )
 
 entry(
-    index = 26,
+    index = 28,
     label = "diene_disub_disub_out",
     group = 
 """
@@ -457,7 +485,7 @@ entry(
 )
 
 entry(
-    index = 27,
+    index = 29,
     label = "diene_disubNd2_disubNd2_out",
     group = 
 """
@@ -474,7 +502,7 @@ entry(
 )
 
 entry(
-    index = 28,
+    index = 30,
     label = "diene_disubNd2_disubDe_out",
     group = 
 """
@@ -491,7 +519,7 @@ entry(
 )
 
 entry(
-    index = 29,
+    index = 31,
     label = "diene_disubDe_disubDe_out",
     group = 
 """
@@ -508,7 +536,18 @@ entry(
 )
 
 entry(
-    index = 30,
+    index = 32,
+    label = "diene_in_benzene",
+    group = 
+"""
+1 *4 [Cb,Cbf] u0 {2,B}
+2 *5 [Cb,Cbf] u0 {1,B}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 33,
     label = "diene_in_2H",
     group = 
 """
@@ -521,7 +560,7 @@ entry(
 )
 
 entry(
-    index = 31,
+    index = 34,
     label = "diene_in_HNd",
     group = 
 """
@@ -534,7 +573,7 @@ entry(
 )
 
 entry(
-    index = 32,
+    index = 35,
     label = "diene_in_HDe",
     group = 
 """
@@ -547,7 +586,7 @@ entry(
 )
 
 entry(
-    index = 33,
+    index = 36,
     label = "diene_in_NdH",
     group = 
 """
@@ -560,7 +599,7 @@ entry(
 )
 
 entry(
-    index = 34,
+    index = 37,
     label = "diene_in_DeH",
     group = 
 """
@@ -573,7 +612,7 @@ entry(
 )
 
 entry(
-    index = 35,
+    index = 38,
     label = "diene_in_Nd2",
     group = 
 """
@@ -586,7 +625,7 @@ entry(
 )
 
 entry(
-    index = 36,
+    index = 39,
     label = "diene_in_NdDe",
     group = 
 """
@@ -599,7 +638,7 @@ entry(
 )
 
 entry(
-    index = 37,
+    index = 40,
     label = "diene_in_DeNd",
     group = 
 """
@@ -612,7 +651,7 @@ entry(
 )
 
 entry(
-    index = 38,
+    index = 41,
     label = "diene_in_De2",
     group = 
 """
@@ -625,7 +664,7 @@ entry(
 )
 
 entry(
-    index = 39,
+    index = 42,
     label = "ene",
     group = 
 """
@@ -636,7 +675,7 @@ entry(
 )
 
 entry(
-    index = 40,
+    index = 43,
     label = "ene_unsub_unsub",
     group = 
 """
@@ -651,7 +690,7 @@ entry(
 )
 
 entry(
-    index = 41,
+    index = 44,
     label = "ene_unsub_monosub",
     group = 
 """
@@ -666,7 +705,7 @@ entry(
 )
 
 entry(
-    index = 42,
+    index = 45,
     label = "ene_2H_HNd",
     group = 
 """
@@ -681,7 +720,7 @@ entry(
 )
 
 entry(
-    index = 43,
+    index = 46,
     label = "ene_2H_HDe",
     group = 
 """
@@ -696,7 +735,7 @@ entry(
 )
 
 entry(
-    index = 44,
+    index = 47,
     label = "ene_monosub_unsub",
     group = 
 """
@@ -711,7 +750,7 @@ entry(
 )
 
 entry(
-    index = 45,
+    index = 48,
     label = "ene_HNd_2H",
     group = 
 """
@@ -726,7 +765,7 @@ entry(
 )
 
 entry(
-    index = 46,
+    index = 49,
     label = "ene_HDe_2H",
     group = 
 """
@@ -741,7 +780,7 @@ entry(
 )
 
 entry(
-    index = 47,
+    index = 50,
     label = "ene_monosub_monosub",
     group = 
 """
@@ -756,7 +795,7 @@ entry(
 )
 
 entry(
-    index = 48,
+    index = 51,
     label = "ene_HNd_HNd",
     group = 
 """
@@ -771,7 +810,7 @@ entry(
 )
 
 entry(
-    index = 49,
+    index = 52,
     label = "ene_HNd_HDe",
     group = 
 """
@@ -786,7 +825,7 @@ entry(
 )
 
 entry(
-    index = 50,
+    index = 53,
     label = "ene_HDe_HNd",
     group = 
 """
@@ -801,7 +840,7 @@ entry(
 )
 
 entry(
-    index = 51,
+    index = 54,
     label = "ene_HDe_HDe",
     group = 
 """
@@ -816,7 +855,7 @@ entry(
 )
 
 entry(
-    index = 52,
+    index = 55,
     label = "ene_unsub_disub",
     group = 
 """
@@ -831,7 +870,7 @@ entry(
 )
 
 entry(
-    index = 53,
+    index = 56,
     label = "ene_2H_Nd2",
     group = 
 """
@@ -846,7 +885,7 @@ entry(
 )
 
 entry(
-    index = 54,
+    index = 57,
     label = "ene_2H_NdDe",
     group = 
 """
@@ -861,7 +900,7 @@ entry(
 )
 
 entry(
-    index = 55,
+    index = 58,
     label = "ene_2H_De2",
     group = 
 """
@@ -876,7 +915,7 @@ entry(
 )
 
 entry(
-    index = 56,
+    index = 59,
     label = "ene_disub_unsub",
     group = 
 """
@@ -891,7 +930,7 @@ entry(
 )
 
 entry(
-    index = 57,
+    index = 60,
     label = "ene_Nd2_2H",
     group = 
 """
@@ -906,7 +945,7 @@ entry(
 )
 
 entry(
-    index = 58,
+    index = 61,
     label = "ene_NdDe_2H",
     group = 
 """
@@ -921,7 +960,7 @@ entry(
 )
 
 entry(
-    index = 59,
+    index = 62,
     label = "ene_De2_2H",
     group = 
 """
@@ -936,7 +975,7 @@ entry(
 )
 
 entry(
-    index = 60,
+    index = 63,
     label = "ene_monosub_disub",
     group = 
 """
@@ -951,7 +990,7 @@ entry(
 )
 
 entry(
-    index = 61,
+    index = 64,
     label = "ene_HNd_Nd2",
     group = 
 """
@@ -966,7 +1005,7 @@ entry(
 )
 
 entry(
-    index = 62,
+    index = 65,
     label = "ene_HNd_NdDe",
     group = 
 """
@@ -981,7 +1020,7 @@ entry(
 )
 
 entry(
-    index = 63,
+    index = 66,
     label = "ene_HNd_De2",
     group = 
 """
@@ -996,7 +1035,7 @@ entry(
 )
 
 entry(
-    index = 64,
+    index = 67,
     label = "ene_HDe_Nd2",
     group = 
 """
@@ -1011,7 +1050,7 @@ entry(
 )
 
 entry(
-    index = 65,
+    index = 68,
     label = "ene_HDe_NdDe",
     group = 
 """
@@ -1026,7 +1065,7 @@ entry(
 )
 
 entry(
-    index = 66,
+    index = 69,
     label = "ene_HDe_De2",
     group = 
 """
@@ -1041,7 +1080,7 @@ entry(
 )
 
 entry(
-    index = 67,
+    index = 70,
     label = "ene_disub_monosub",
     group = 
 """
@@ -1056,7 +1095,7 @@ entry(
 )
 
 entry(
-    index = 68,
+    index = 71,
     label = "ene_Nd2_HNd",
     group = 
 """
@@ -1071,7 +1110,7 @@ entry(
 )
 
 entry(
-    index = 69,
+    index = 72,
     label = "ene_Nd2_HDe",
     group = 
 """
@@ -1086,7 +1125,7 @@ entry(
 )
 
 entry(
-    index = 70,
+    index = 73,
     label = "ene_NdDe_HNd",
     group = 
 """
@@ -1101,7 +1140,7 @@ entry(
 )
 
 entry(
-    index = 71,
+    index = 74,
     label = "ene_NdDe_HDe",
     group = 
 """
@@ -1116,7 +1155,7 @@ entry(
 )
 
 entry(
-    index = 72,
+    index = 75,
     label = "ene_De2_HNd",
     group = 
 """
@@ -1131,7 +1170,7 @@ entry(
 )
 
 entry(
-    index = 73,
+    index = 76,
     label = "ene_De2_HDe",
     group = 
 """
@@ -1146,7 +1185,7 @@ entry(
 )
 
 entry(
-    index = 74,
+    index = 77,
     label = "ene_disub_disub",
     group = 
 """
@@ -1161,7 +1200,7 @@ entry(
 )
 
 entry(
-    index = 75,
+    index = 78,
     label = "ene_Nd2_Nd2",
     group = 
 """
@@ -1176,7 +1215,7 @@ entry(
 )
 
 entry(
-    index = 76,
+    index = 79,
     label = "ene_Nd2_NdDe",
     group = 
 """
@@ -1191,7 +1230,7 @@ entry(
 )
 
 entry(
-    index = 77,
+    index = 80,
     label = "ene_Nd2_De2",
     group = 
 """
@@ -1206,7 +1245,7 @@ entry(
 )
 
 entry(
-    index = 78,
+    index = 81,
     label = "ene_NdDe_Nd2",
     group = 
 """
@@ -1221,7 +1260,7 @@ entry(
 )
 
 entry(
-    index = 79,
+    index = 82,
     label = "ene_NdDe_NdDe",
     group = 
 """
@@ -1236,7 +1275,7 @@ entry(
 )
 
 entry(
-    index = 80,
+    index = 83,
     label = "ene_NdDe_De2",
     group = 
 """
@@ -1251,7 +1290,7 @@ entry(
 )
 
 entry(
-    index = 81,
+    index = 84,
     label = "ene_De2_Nd2",
     group = 
 """
@@ -1266,7 +1305,7 @@ entry(
 )
 
 entry(
-    index = 82,
+    index = 85,
     label = "ene_De2_NdDe",
     group = 
 """
@@ -1281,7 +1320,7 @@ entry(
 )
 
 entry(
-    index = 83,
+    index = 86,
     label = "ene_De2_De2",
     group = 
 """
@@ -1296,7 +1335,7 @@ entry(
 )
 
 entry(
-    index = 84,
+    index = 87,
     label = "allene",
     group = 
 """
@@ -1307,7 +1346,7 @@ entry(
 )
 
 entry(
-    index = 85,
+    index = 88,
     label = "allene_unsub",
     group = 
 """
@@ -1320,7 +1359,7 @@ entry(
 )
 
 entry(
-    index = 86,
+    index = 89,
     label = "allene_monosub",
     group = 
 """
@@ -1333,7 +1372,7 @@ entry(
 )
 
 entry(
-    index = 87,
+    index = 90,
     label = "allene_disub",
     group = 
 """
@@ -1346,7 +1385,7 @@ entry(
 )
 
 entry(
-    index = 88,
+    index = 91,
     label = "yne",
     group = 
 """
@@ -1357,7 +1396,7 @@ entry(
 )
 
 entry(
-    index = 89,
+    index = 92,
     label = "yne_unsub_unsub",
     group = 
 """
@@ -1370,7 +1409,7 @@ entry(
 )
 
 entry(
-    index = 90,
+    index = 93,
     label = "yne_unsub_monosub",
     group = 
 """
@@ -1383,7 +1422,7 @@ entry(
 )
 
 entry(
-    index = 91,
+    index = 94,
     label = "yne_monosub_monosub",
     group = 
 """
@@ -1396,24 +1435,25 @@ entry(
 )
 
 entry(
-    index = 92,
+    index = 95,
     label = "yne_ortho_benzyne",
     group = 
 """
-1     C u0 {2,S} {3,D}
-2     C u0 {1,S} {4,D}
-3     C u0 {1,D} {6,S}
-4     C u0 {2,D} {5,S}
-5 *1  Ct u0 {4,S} {6,T}
-6 *2  Ct u0 {3,S} {5,T}
+1    C  u0 {2,S} {3,D}
+2    C  u0 {1,S} {4,D}
+3    C  u0 {1,D} {6,S}
+4    C  u0 {2,D} {5,S}
+5 *1 Ct u0 {4,S} {6,T}
+6 *2 Ct u0 {3,S} {5,T}
 """,
     kinetics = None,
 )
 
-
 tree(
 """
 L1: diene_out
+    L2: diene_benzene_out
+    L2: diene_pah_bay_out
     L2: diene_5ring_out
         L3: diene_5ring_H_H_out
         L3: diene_5ring_H_Nd_out
@@ -1442,6 +1482,7 @@ L1: diene_out
         L3: diene_disubNd2_disubDe_out
         L3: diene_disubDe_disubDe_out
 L1: diene_in
+    L2: diene_in_benzene
     L2: diene_in_2H
     L2: diene_in_HNd
     L2: diene_in_HDe
